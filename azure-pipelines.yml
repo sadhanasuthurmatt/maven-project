@@ -3,28 +3,6 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo Hello, world! Changed
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line scripts'
-
-_______________________________________________________________________________________________________________________
-Use Case 2
-Experience  with Jobs
-
-Jobs are running parallel
-Job 1 and 1 are running different agents (Agents are virtual servers)
-
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
 jobs:
 - job: job1
   steps:
