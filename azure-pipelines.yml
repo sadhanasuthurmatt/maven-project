@@ -5,6 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 jobs:
 - job: job1
+  dependsOn: job2
   steps:
   - script: echo Job1 - Hello, world! Changed
     displayName: 'Run a one-line script'
